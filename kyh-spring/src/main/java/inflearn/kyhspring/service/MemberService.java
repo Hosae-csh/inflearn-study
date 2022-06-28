@@ -3,10 +3,13 @@ package inflearn.kyhspring.service;
 import inflearn.kyhspring.domain.Member;
 import inflearn.kyhspring.repository.MemberRepository;
 import inflearn.kyhspring.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class MemberService {
 
     private final MemberRepository memberRepository;
